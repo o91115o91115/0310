@@ -20,11 +20,6 @@ namespace MvcApplication2.Controllers
             ViewBag.ShipCity = order.ShipCity;
             return View();
         }
-        public ActionResult Index2(String id)
-        {
-            ViewBag.id = id;
-            return View();
-        }
 
     }
 }
