@@ -11,20 +11,20 @@ namespace MvcApplication2.Models
         /// <summary>
         /// 新增訂單
         /// </summary>
-        public void InsertOrder()
+        public void InsertOrder(Models.Class1 order)
         {
 
         }
         /// <summary>
         /// 刪除訂單By id
         /// </summary>
-        public void DeleteOrderByid()
+        public void DeleteOrderByid(string id)
         {
         }
         /// <summary>
         /// 更新訂單
         /// </summary>
-        public void UpdataOrder()
+        public void UpdataOrder(Models.Class1 order)
         {
         }
         /// <summary>

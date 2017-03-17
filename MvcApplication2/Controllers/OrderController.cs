@@ -20,6 +20,24 @@ namespace MvcApplication2.Controllers
             ViewBag.ShipCity = order.ShipCity;
             return View();
         }
-
+        /// <summary>
+        /// 新增訂單畫面
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult InsertOrder()
+        {
+            return View();
+        }
+        /// <summary>
+        /// 新增訂單的Action
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost()]
+        public ActionResult InsertOrder(Models.Class1 order)
+        {
+            Models.OrderService orderService = new Models.OrderService();
+            orderService.InsertOrder(order);
+            return View("Index");
+        }
     }
 }
