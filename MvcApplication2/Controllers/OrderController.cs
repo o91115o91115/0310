@@ -39,7 +39,10 @@ namespace MvcApplication2.Controllers
             orderService.InsertOrder(order);
             return View("Index");
         }
-
+        /// <summary>
+        /// 測試Json
+        /// </summary>
+        /// <returns></returns>
         [HttpGet()]
         public JsonResult TestJson() {
             var result = new Models.Class1() { CustomerID="121313", OrderID="5555", ShipCity="tainan" };
