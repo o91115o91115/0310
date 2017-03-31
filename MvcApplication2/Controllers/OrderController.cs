@@ -13,8 +13,17 @@ namespace MvcApplication2.Controllers
 
         public ActionResult Index()
         {
-            Models.OrderService orderService = new Models.OrderService();
-            ViewBag.Data=orderService.GetOrders();
+            List<SelectListItem> custData = new List<SelectListItem>();
+            custData.Add(new SelectListItem() {
+                Text = "睿陽資訊",
+                Value="1"
+            });
+            custData.Add(new SelectListItem()
+            {
+                Text = "網軟資訊",
+                Value = "2"
+            });
+            ViewBag.custData = custData;
             return View();
         }
         /// <summary>

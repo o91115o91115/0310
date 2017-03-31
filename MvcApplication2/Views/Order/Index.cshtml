@@ -11,12 +11,18 @@
 </head>
 <body>
     <div>
+        @Html.DropDownList("客戶代號", (List<SelectListItem>)ViewBag.custData)
         <table>
             <tr>
                 <td>客戶代號</td>
                 <td>員工代號</td>
                 <td>運送地點</td>
             </tr>
+
+            @*@foreach (var item in (List<eSalex.Models.Class1>)ViewBag.Data)
+            {
+
+            }*@
         </table>
     </div>
 </body>
