@@ -40,12 +40,16 @@ namespace MvcApplication2.Models
             return result;
         }
         /// <summary>
-        /// 取得訂單
+        /// 取得多筆訂單
         /// </summary>
         /// <returns></returns>
         public List<Models.Class1> GetOrders()
         {
-            return new List<Class1>();
+            List<Models.Class1> result = new List<Models.Class1>();
+            result.Add(new Class1() { CustomerID="123456", EmployeeID="5555", ShipAddress="台北" });
+            result.Add(new Class1() { CustomerID = "789123", EmployeeID = "6666", ShipAddress = "台南" });
+            return result;
+
         }
     }
 }
